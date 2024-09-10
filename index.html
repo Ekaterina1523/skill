@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="">
+                    <img src="./img/logo.svg" alt="Логотип" class="logo">
+                </a>
+                
+                <nav class="nav">
+                    <a href="./главная.html">Главная</a>
+                    <a href="./tарифы.html">Тарифы</a>
+                    <a href="./faq.html">FAQ</a>
+                </nav>
+
+                <div class="auth-buttons">
+                    <a href="./регистрация.html" class="reg">Зарегистрироваться</a>
+                    <a href="./auth.html" class="auth-link">Войти</a>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <img class="loader" src="./img/loader.png" alt="">
+                        <div class="companies-block">
+                            <p>Использовано компаний </p>
+                            <p data-type="companies"></p>
+                            <p>Лимит по компаниям </p>
+                            <p data-type="limit"></p>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <p class="name">Алексей А.</p>
+                        <div class="sign-out">Выйти</div>
+                        <img src="./img/avatar.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <div class="container">
+        <div class="block">
+            <div class="left">
+                <p class="heading">сервис по поиску <br> публикаций <br> о компании <br> по его ИНН</p>
+            </div>
+
+            <div class="right">
+                <img src="./img/Group.svg">
+            </div>
+            <div class="text">
+                <p>Комплексный анализ публикаций, получение данных в формате PDF на электронную почту.</p>
+                <a href="./page.html" class="button" data-type="logined_button">Запросить данные</a>
+            </div>
+        </div>
+        <div class="why-we_holder">
+            <img src="./img/Почему именно мы.svg">
+            <div class="why-we swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/mask-group.png" alt="">
+                        <p>Высокая и оперативная скорость <br> обработки заявки</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/mask-group-1.png" alt="">
+                        <p>Огромная комплексная база <br> данных, обеспечивающая <br> объективный ответ на запрос</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/mask-group-2.png" alt="">
+                        <p>Защита конфеденциальных сведений, <br> не подлежащих разглашению по <br> федеральному законодательству</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <div class="ok">
+            <img src="./img/Group 14.svg">
+        </div>
+
+        <div class="cards_holder">
+            <p class="title_bold">наши тарифы</p>
+
+            <div class="cards">
+                <div class="card orange" data-type="current_card">
+                    <div class="head">
+                        <p class="inter-30">Beginner</p>
+                        <p class="inter-18">Для небольшого исследования</p>
+                        <img src="./img/lamp.svg" alt="">
+                    </div>
+                    <div class="body">
+                        <div class="badge inter-14">Текущий тариф</div>
+                        <p class="inter-30">799 ₽ <span>1 200 ₽</span></p>
+                        <p class="inter-18">Подзаголовок</p>
+                        <p class="inter-20">В тариф входит:</p>
+                        <ul class="check-list">
+                            <li class="inter-18">Безлимитная история запросов</li>
+                            <li class="inter-18">Безопасная сделка</li>
+                            <li class="inter-18">Поддержка 24/7</li>
+                        </ul>
+        
+                        <button class="card-button for-logined inter-20">Перейти в личный кабинет</button>
+                        <button class="card-button inter-20">Подробнее</button>
+                    </div>
+                </div>
+                <div class="card blue">
+                    <div class="head">
+                        <p class="inter-30">Pro</p>
+                        <p class="inter-18">Для HR и фрилансеров</p>
+                        <img src="./img/card-2.png" alt="">
+                    </div>
+                    <div class="body">
+                        <div class="badge inter-14">Текущий тариф</div>
+                        <p class="inter-30">799 ₽ <span>1 200 ₽</span></p>
+                        <p class="inter-18">Подзаголовок</p>
+                        <p class="inter-20">В тариф входит:</p>
+                        <ul class="check-list">
+                            <li class="inter-18">Безлимитная история запросов</li>
+                            <li class="inter-18">Безопасная сделка</li>
+                            <li class="inter-18">Поддержка 24/7</li>
+                        </ul>
+        
+                        <button class="card-button for-logined inter-20">Перейти в личный кабинет</button>
+                        <button class="card-button inter-20">Подробнее</button>
+                    </div>
+                </div>
+                <div class="card black">
+                    <div class="head">
+                        <p class="inter-30">Business</p>
+                        <p class="inter-18">Для корпоративных клиентов</p>
+                        <img src="./img/card-3.png" alt="">
+                    </div>
+                    <div class="body">
+                        <div class="badge inter-14">Текущий тариф</div>
+                        <p class="inter-30">799 ₽ <span>1 200 ₽</span></p>
+                        <p class="inter-18">Подзаголовок</p>
+                        <p class="inter-20">В тариф входит:</p>
+                        <ul class="check-list">
+                            <li class="inter-18">Безлимитная история запросов</li>
+                            <li class="inter-18">Безопасная сделка</li>
+                            <li class="inter-18">Поддержка 24/7</li>
+                        </ul>
+        
+                        <button class="card-button for-logined inter-20">Перейти в личный кабинет</button>
+                        <button class="card-button inter-20">Подробнее</button>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <img class="photo" src="./img/eqw 1.svg" alt="">
+                <div class="text1">
+                    <p>г. Москва, Цветной б-р, 40 <br> +7 495 771 21 11 <br> info@skan.ru</p>
+                    <p>Copyright. 2022</p>
+                </div>
+            </div>
+        </div>
+      
+    </footer>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>

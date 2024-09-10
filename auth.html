@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="./index.html">
+                    <img src="./img/logo.svg" alt="Логотип" class="logo">
+                </a>
+                <nav class="nav">
+                    <a href="./главная.html">Главная</a>
+                    <a href="./tарифы.html">Тарифы</a>
+                    <a href="./faq.html">FAQ</a>
+                </nav>
+                <div class="auth-buttons">
+                    <a href="./регистрация.html" class="reg">Зарегистрироваться</a>
+                    <a href="./auth.html" class="auth-link">Войти</a>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <img class="loader" src="./img/loader.png" alt="">
+                        <div class="companies-block">
+                            <p>Использовано компаний </p>
+                            <p data-type="companies"></p>
+                            <p>Лимит по компаниям </p>
+                            <p data-type="limit"></p>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <p class="name">Алексей А.</p>
+                        <div class="sign-out">Выйти</div>
+                        <img src="./img/avatar.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="auth-page">
+            <div class="left-column">
+                <h1>Для оформления подписки <br> на тариф, необходимо <br> авторизоваться.</h1>
+                <img src="./img/keys.svg" alt="">
+            </div>
+            <div class="right-column">
+                <img src="./img/Group 3.png">
+                <div class="registration-block">
+                    <div class="login-text">
+                        <a class="blue-text" href="">Войти</a>
+                        <a class="black-text" href="">Зарегистрироваться</a>
+                    </div>
+                    <form action="https://gateway.scan-interfax.ru/api/v1/account/login" method="post" class="auth-form">
+                        <label>
+                            <p>Логин или номер телефона:</p>
+                            <input name="login" type="text" required value="sf_student1">
+                        </label>
+                        <label>
+                            <p>Пароль:</p>
+                            <input name="password" type="password" required value="4i2385j">
+                        </label>
+                        <button type="submit" class="submit-button">Войти</button>
+                    </form>
+                    <a href="" class="password-reset">Восстановить пароль</a>
+                    <div class="browser">
+                        <p class="link">Войти через:</p>
+                        <img src="./img/Group 5.png">
+                        <img src="./img/Group 6.png">
+                        <img src="./img/Group 7.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <img class="photo" src="./img/eqw 1.svg" alt="">
+                <div class="text1">
+                    <p>г. Москва, Цветной б-р, 40 <br> +7 495 771 21 11 <br> info@skan.ru</p>
+                    <p>Copyright. 2022</p>
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="./index.html">
+                    <img src="./img/logo.svg" alt="Логотип" class="logo">
+                </a>
+                <nav class="nav">
+                    <a href="./главная.html">Главная</a>
+                    <a href="./tарифы.html">Тарифы</a>
+                    <a href="./faq.html">FAQ</a>
+                </nav>
+                <div class="auth-buttons">
+                    <a href="./регистрация.html" class="reg">Зарегистрироваться</a>
+                    <a href="./auth.html" class="auth-link">Войти</a>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <img class="loader" src="./img/loader.png" alt="">
+                        <div class="companies-block">
+                            <p>Использовано компаний </p>
+                            <p data-type="companies"></p>
+                            <p>Лимит по компаниям </p>
+                            <p data-type="limit"></p>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <p class="name">Алексей А.</p>
+                        <div class="sign-out">Выйти</div>
+                        <img src="./img/avatar.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="search-holder">
+            <div class="head">
+                <h1>Найдите необходимые <br> данные в пару кликов.</h1>
+                <p class="subtitle">Задайте параметры поиска. <br> Чем больше заполните, тем точнее поиск</p>
+                <img class="document" src="./img/Document.png">
+                <img class="folders" src="./img/Folders.png">
+            </div>
+            <form action="" class="search">
+                <div class="left-inputs">
+                    <label>
+                        <p>ИНН компании*</p>
+                        <input type="text" placeholder="10 цифр" maxlength="10" required>
+                    </label>
+                    <label>
+                        <p>Тональность</p>
+                        <select name="" id="">
+                            <option value="">позитивная</option>
+                            <option value="">негативная</option>
+                            <option value="">любая</option>
+                        </select>
+                    </label>
+                    <label>
+                        <p>Количество документов в выдаче*</p>
+                        <input type="number" placeholder="от 1 до 1000" max="1000" min="0" required>
+                    </label>
+                    <div class="labels">
+                        <p>Диапазон поиска*</p>
+                        <select name="beginning" id="" required>
+                            <option value="">Дата начала</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select name="exit" id="" required>
+                            <option value="">Дата конца</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="right-inputs">
+                    <div class="checkboxes">
+                        <label>
+                            <input type="checkbox">
+                            <p>Признак максимальной полноты</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <p>Упоминания в бизнес-контексте</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <p>Главная роль в публикации</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <p>Публикации только с риск-факторами</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <p>Включать технические новости рынков</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <p>Включать анонсы и календари</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <p>Включать сводки новостей</p>
+                        </label>
+                    </div>
+                    <div class="submit-block">
+                        <a href="" class="button">Поиск</a>
+                        <p>* Обязательные к заполнению поля</p>
+                    </div>
+                </div>
+            </form>
+            <img src="./img/rocket.svg" alt="">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <img class="photo" src="./img/eqw 1.svg" alt="">
+                <div class="text1">
+                    <p>г. Москва, Цветной б-р, 40 <br> +7 495 771 21 11 <br> info@skan.ru</p>
+                    <p>Copyright. 2022</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
